@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>ydleenudt</title>
+  <title>PL/0 language compiler(in PASCAL) | ydleenudt</title>
   <meta name="author" content="Victor Lee">
   
   <meta name="description" content="CS as well as Medcine">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="PL/0 language compiler(in PASCAL)"/>
   <meta property="og:site_name" content="ydleenudt"/>
 
   
@@ -46,8 +46,7 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-  <article class="post">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
   <div class="post-content">
     <header>
@@ -57,7 +56,7 @@
       
       
   
-    <h1 class="title"><a href="/2015/06/27/PL-0-language-compiler-in-PASCAL/">PL/0 language compiler(in PASCAL)</a></h1>
+    <h1 class="title">PL/0 language compiler(in PASCAL)</h1>
   
 
     </header>
@@ -252,6 +251,29 @@
       
         
         
+  
+  <div class="tags">
+    <a href="/tags/compiler/">compiler</a>
+  </div>
+
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
       
       <div class="clearfix"></div>
     </footer>
@@ -259,112 +281,27 @@
 </article>
 
 
+<section id="comment">
+  <h1 class="title">留言</h1>
 
-
-  <article class="post">
   
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-06-25T16:15:43.000Z"><a href="/2015/06/26/OpenGL-Cheetsheet/">2015-06-26</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2015/06/26/OpenGL-Cheetsheet/">OpenGL Cheetsheet(Deprecated)</a></h1>
-  
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 
-    </header>
-    <div class="entry">
-      
-        <p><strong>Warning</strong>: This article won’t be updated because the information is easy to find in website of OpenGL and may cause this article to be unusable at any time.  </p>
-<h2 id="FUNCTIONS">FUNCTIONS</h2><h3 id="1-_Initialize">1. Initialize</h3><pre><code>glEnable<span class="list">(<span class="keyword">GL_DEPTH_TEST</span>)</span><span class="comment">;</span>
-glDepthFunc<span class="list">(<span class="keyword">GL_LEQUAL</span>)</span><span class="comment">;</span>
-</code></pre><p>is the initialization of depth test.</p>
-<h3 id="Name">Name</h3><p><strong>glDepthFunc</strong> — specify the value used for depth buffer comparisons</p>
-<h3 id="C_Specification">C Specification</h3><p><strong>void glDepthFunc</strong>( GLenum <em>func</em>);</p>
-<h3 id="Parameters">Parameters</h3><p><strong><em>func</em></strong><br>Specifies the depth comparison function. Symbolic constants <strong>GL_NEVER</strong>, <strong>GL_LESS</strong>, <strong>GL_EQUAL</strong>, <strong>GL_LEQUAL</strong>, <strong>GL_GREATER</strong>, <strong>GL_NOTEQUAL</strong>, <strong>GL_GEQUAL</strong>, and <strong>GL_ALWAYS</strong> are accepted. The initial value is <strong>GL_LESS</strong>.</p>
-<h3 id="Description">Description</h3><p><strong>glDepthFunc</strong> specifies the function used to compare each incoming pixel depth value with the depth value present in the depth buffer. The comparison is performed only if depth testing is enabled. (See glEnable and glDisable of <strong>GL_DEPTH_TEST</strong>.)</p>
-<p>func specifies the conditions under which the pixel will be drawn. The comparison functions are as follows:</p>
-<p><strong>GL_NEVER</strong><br>Never passes.</p>
-<p><strong>GL_LESS</strong><br>Passes if the incoming depth value is less than the stored depth value.</p>
-<p><strong>GL_EQUAL</strong><br>Passes if the incoming depth value is equal to the stored depth value.</p>
-<p><strong>GL_LEQUAL</strong><br>Passes if the incoming depth value is less than or equal to the stored depth value.</p>
-<p><strong>GL_GREATER</strong><br>Passes if the incoming depth value is greater than the stored depth value.</p>
-<p><strong>GL_NOTEQUAL</strong><br>Passes if the incoming depth value is not equal to the stored depth value.</p>
-<p><strong>GL_GEQUAL</strong><br>Passes if the incoming depth value is greater than or equal to the stored depth value.</p>
-<p><strong>GL_ALWAYS</strong><br>Always passes.</p>
-<p>The initial value of <em>func</em> is <strong>GL_LESS</strong>. Initially, depth testing is disabled. If depth testing is disabled or if no depth buffer exists, it is as if the depth test always passes.</p>
-<h3 id="Notes">Notes</h3><p>Even if the depth buffer exists and the depth mask is non-zero, the depth buffer is not updated if the depth test is disabled. In order to unconditionally write to the depth buffer, the depth test should be enabled and set to <strong>GL_ALWAYS</strong>.</p>
-<h3 id="Errors">Errors</h3><p><strong>GL_INVALID_ENUM</strong> is generated if <em>func</em> is not an accepted value.</p>
-<p>Associated Gets</p>
-<p>glGet with argument GL_DEPTH_FUNC</p>
-<p>glIsEnabled with argument GL_DEPTH_TEST</p>
-<h3 id="See_Also">See Also</h3><p>glDepthRange, glEnable, glPolygonOffset</p>
-<h3 id="Copyright">Copyright</h3><p>Copyright © 1991-2006 Silicon Graphics, Inc. Copyright © 2010-2013 Khronos Group. This document is licensed under the SGI Free Software B License. For details, see <a href="http://oss.sgi.com/projects/FreeB/" target="_blank" rel="external">http://oss.sgi.com/projects/FreeB/</a>.</p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-06-25T15:07:14.941Z"><a href="/2015/06/25/hello-world/">2015-06-25</a></time>
-      
+<div class="fb-comments" data-href="http://yoursite.com/2015/06/27/PL-0-language-compiler-in-PASCAL/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
       
   
-    <h1 class="title"><a href="/2015/06/25/hello-world/">Hello World</a></h1>
-  
+</section>
 
-    </header>
-    <div class="entry">
-      
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-
-<nav id="pagination">
-  
-  
-  <div class="clearfix"></div>
-</nav></div></div>
+</div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
