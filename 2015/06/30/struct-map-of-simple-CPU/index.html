@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>OpenGL Cheetsheet(Deprecated) | ydleenudt</title>
+  <title>struct map of simple CPU | ydleenudt</title>
   <meta name="author" content="Victor Lee">
   
   <meta name="description" content="CS | Medcine | military | Python">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="OpenGL Cheetsheet(Deprecated)"/>
+  <meta property="og:title" content="struct map of simple CPU"/>
   <meta property="og:site_name" content="ydleenudt"/>
 
   
@@ -52,41 +52,17 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2015-06-25T16:15:43.000Z"><a href="/2015/06/26/OpenGL-Cheetsheet/">2015-06-26</a></time>
+        <time datetime="2015-06-30T08:10:23.000Z"><a href="/2015/06/30/struct-map-of-simple-CPU/">2015-06-30</a></time>
       
       
   
-    <h1 class="title">OpenGL Cheetsheet(Deprecated)</h1>
+    <h1 class="title">struct map of simple CPU</h1>
   
 
     </header>
     <div class="entry">
       
-        <p><strong>Warning</strong>: This article won’t be updated because the information is easy to find in website of OpenGL and may cause this article to be unusable at any time.  </p>
-<h2 id="FUNCTIONS">FUNCTIONS</h2><h3 id="1-_Initialize">1. Initialize</h3><pre><code>glEnable<span class="list">(<span class="keyword">GL_DEPTH_TEST</span>)</span><span class="comment">;</span>
-glDepthFunc<span class="list">(<span class="keyword">GL_LEQUAL</span>)</span><span class="comment">;</span>
-</code></pre><p>is the initialization of depth test.</p>
-<h3 id="Name">Name</h3><p><strong>glDepthFunc</strong> — specify the value used for depth buffer comparisons</p>
-<h3 id="C_Specification">C Specification</h3><p><strong>void glDepthFunc</strong>( GLenum <em>func</em>);</p>
-<h3 id="Parameters">Parameters</h3><p><strong><em>func</em></strong><br>Specifies the depth comparison function. Symbolic constants <strong>GL_NEVER</strong>, <strong>GL_LESS</strong>, <strong>GL_EQUAL</strong>, <strong>GL_LEQUAL</strong>, <strong>GL_GREATER</strong>, <strong>GL_NOTEQUAL</strong>, <strong>GL_GEQUAL</strong>, and <strong>GL_ALWAYS</strong> are accepted. The initial value is <strong>GL_LESS</strong>.</p>
-<h3 id="Description">Description</h3><p><strong>glDepthFunc</strong> specifies the function used to compare each incoming pixel depth value with the depth value present in the depth buffer. The comparison is performed only if depth testing is enabled. (See glEnable and glDisable of <strong>GL_DEPTH_TEST</strong>.)</p>
-<p>func specifies the conditions under which the pixel will be drawn. The comparison functions are as follows:</p>
-<p><strong>GL_NEVER</strong><br>Never passes.</p>
-<p><strong>GL_LESS</strong><br>Passes if the incoming depth value is less than the stored depth value.</p>
-<p><strong>GL_EQUAL</strong><br>Passes if the incoming depth value is equal to the stored depth value.</p>
-<p><strong>GL_LEQUAL</strong><br>Passes if the incoming depth value is less than or equal to the stored depth value.</p>
-<p><strong>GL_GREATER</strong><br>Passes if the incoming depth value is greater than the stored depth value.</p>
-<p><strong>GL_NOTEQUAL</strong><br>Passes if the incoming depth value is not equal to the stored depth value.</p>
-<p><strong>GL_GEQUAL</strong><br>Passes if the incoming depth value is greater than or equal to the stored depth value.</p>
-<p><strong>GL_ALWAYS</strong><br>Always passes.</p>
-<p>The initial value of <em>func</em> is <strong>GL_LESS</strong>. Initially, depth testing is disabled. If depth testing is disabled or if no depth buffer exists, it is as if the depth test always passes.</p>
-<h3 id="Notes">Notes</h3><p>Even if the depth buffer exists and the depth mask is non-zero, the depth buffer is not updated if the depth test is disabled. In order to unconditionally write to the depth buffer, the depth test should be enabled and set to <strong>GL_ALWAYS</strong>.</p>
-<h3 id="Errors">Errors</h3><p><strong>GL_INVALID_ENUM</strong> is generated if <em>func</em> is not an accepted value.</p>
-<p>Associated Gets</p>
-<p>glGet with argument GL_DEPTH_FUNC</p>
-<p>glIsEnabled with argument GL_DEPTH_TEST</p>
-<h3 id="See_Also">See Also</h3><p>glDepthRange, glEnable, glPolygonOffset</p>
-<h3 id="Copyright">Copyright</h3><p>Copyright © 1991-2006 Silicon Graphics, Inc. Copyright © 2010-2013 Khronos Group. This document is licensed under the SGI Free Software B License. For details, see <a href="http://oss.sgi.com/projects/FreeB/" target="_blank" rel="external">http://oss.sgi.com/projects/FreeB/</a>.</p>
+        <p>Written by 云峰<br><img src="http://img-storage.qiniudn.com/15-6-30/62552136.jpg" alt="img0"></p>
 
       
     </div>
@@ -96,7 +72,7 @@ glDepthFunc<span class="list">(<span class="keyword">GL_LEQUAL</span>)</span><sp
         
   
   <div class="tags">
-    <a href="/tags/OpenGL/">OpenGL</a>
+    <a href="/tags/CS/">CS</a>
   </div>
 
         <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
